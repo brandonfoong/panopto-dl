@@ -26,3 +26,16 @@ The `-c ASPXAUTH_COOKIE` flag can be used to provide the required authentication
 ### 2. Using NUS Single Sign-On (NUS users only)
 
 NUS users can use their NUSNET account to directly sign in to panopto-dl by using the `-u DOMAIN\USERNAME` and `-p PASSWORD` flags. For some \*nix shells, you may need to delimit the backslash, i.e. type `DOMAIN\\USERNAME` instead.
+
+## Panopto API Endpoints
+
+panopto-dl uses the following RESTful API endpoints to retrieve webcast information:
+
+1. `/Panopto/Services/Data.svc/GetFolderInfo` to retrieve folder names and subfolders
+2. `/Panopto/Services/Data.svc/GetSessions` to retrieve folder contents
+3. `/Panopto/Pages/Viewer/DeliveryInfo.aspx` to retrieve webcast names and streams, and
+4. `/Panopto/Pages/Viewer/Image.aspx` to retrieve slides (for slideshow recordings)
+
+It also uses the following SOAP API to get the direct link to the podcast encode: `/Panopto/PublicAPI/4.6/SessionManagement.svc?singleWsdl`
+
+Disclaimer: AFAIK, the RESTful APIs are **not** officially supported as part of Panopto's public API, and thus, this script *may* break at any time.
