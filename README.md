@@ -21,8 +21,8 @@ If `PANOPTO_URL` specifies a link to a single Panopto session, it will download 
 
 ### 1. With .ASPXAUTH cookie
 
-The `-c ASPXAUTH_COOKIE` flag can be used to provide the required authentication credentials. The .ASPXAUTH cookie can be found by going into Developer Tools > Storage > Cookies
+The `-c ASPXAUTH_COOKIE` flag can be used to provide the required authentication credentials. The .ASPXAUTH cookie can be found by going into Developer Tools > Storage > Cookies in most browsers.
 
 ### 2. Using NUS Single Sign-On (NUS users only)
 
-NUS users can use their NUSNET account to directly sign in to panopto-dl by using the `-u DOMAIN\USERNAME` (or `-u DOMAIN\\USERNAME` for \*nix shells) and `-p PASSWORD` flags.
+NUS users can use their NUSNET account to directly sign in to panopto-dl by using the `-u DOMAIN\USERNAME` and `-p PASSWORD` flags. For some \*nix shells, you may need to delimit the backslash, i.e. type `DOMAIN\\USERNAME` instead.
