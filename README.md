@@ -9,7 +9,7 @@ After installing Python, install the following pip packages using `pip install` 
 1. `zeep`
 2. `beautifulsoup4`
 
-panopto-dl also requires [FFmpeg](https://ffmpeg.org/download.html) to be installed.  The FFmpeg executable (`ffmpeg` or `ffmpeg.exe`) should be placed in the same directory as the `panopto-dl.py` file, or specified in your PATH variable.
+panopto-dl also requires [FFmpeg](https://ffmpeg.org/download.html) to be installed.  The FFmpeg executable (`ffmpeg` or `ffmpeg.exe`) should be placed in the same directory as the `panopto-dl.py` file. Alternatively, you may specify the directory that contains the FFmpeg executable in your PATH variable.
 
 ## How to Use
 
